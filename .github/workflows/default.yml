@@ -6,13 +6,19 @@ jobs:
     name: 👷‍♀️ Builds successfully
     steps:
       - uses: actions/checkout@v2
-      - uses: bahmutov/npm-install@v1.6.0
+      - uses: bahmutov/npm-install@HEAD
+        with:
+          working-directory: frontend
       - run: npm run build
+        working-directory: frontend
 
   unit-tests:
     runs-on: ubuntu-latest
     name: 🚧 Unit tests pass
     steps:
       - uses: actions/checkout@v2
-      - uses: bahmutov/npm-install@v1.6.0
+      - uses: bahmutov/npm-install@HEAD
+        with:
+          working-directory: frontend
       - run: npm run test
+        working-directory: frontend
