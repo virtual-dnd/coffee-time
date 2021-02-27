@@ -1,0 +1,29 @@
+{
+  "name": "coffee-time",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:app": "yarn workspace @coffee/app start",
+    "build:app": "yarn workspace @coffee/app build",
+    "test:app": "yarn workspace @coffee/app test"
+  },
+  "devDependencies": {
+    "husky": "^5.1.1",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "lint-staged": {
+    "*.{js,ts,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

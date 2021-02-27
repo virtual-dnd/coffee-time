@@ -8,9 +8,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@HEAD
         with:
-          working-directory: frontend
-      - run: npm run build
-        working-directory: frontend
+          working-directory: packages/app
+      - run: npm run build:app
 
   unit-tests:
     runs-on: ubuntu-latest
@@ -19,6 +18,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@HEAD
         with:
-          working-directory: frontend
-      - run: npm run test
-        working-directory: frontend
+          working-directory: packages/app
+      - run: npm run test:app
