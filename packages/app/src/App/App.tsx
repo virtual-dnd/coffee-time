@@ -1,8 +1,11 @@
-import styles from "./App.module.css";
+import ThemeProvider from '../context/ThemeProvider/ThemeProvider'
+import defaultTheme from '../utils/themeCache';
+import styles from "./App.module.css"
 
 function App() {
   return (
-    <div className={styles.App}>
+    <ThemeProvider defaultTheme={defaultTheme}>
+      <div className={styles.App}>
       <header>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -12,7 +15,8 @@ function App() {
         </a>
       </header>
     </div>
+    </ThemeProvider>
   );
 }
 
-export default App;
+export default App
