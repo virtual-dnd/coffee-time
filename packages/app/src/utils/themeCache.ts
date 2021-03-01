@@ -1,6 +1,6 @@
 import { ThemeOptions } from '../context/ThemeProvider/ThemeProvider';
 
-const THEME_KEY = 'theme';
+export const THEME_KEY = 'theme';
 const savedTheme = () => localStorage.getItem(THEME_KEY);
 
 if (!savedTheme()) {
