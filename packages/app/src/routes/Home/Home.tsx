@@ -1,7 +1,7 @@
 import { useCallback, useEffect } from 'react';
-import { ThemeOptions } from '../../context/ThemeProvider/ThemeProvider';
-import useTheme from '../../hooks/useTheme';
-import { THEME_KEY } from '../../utils/themeCache'
+import { ThemeOptions } from 'context/ThemeProvider/ThemeProvider';
+import useTheme from 'hooks/useTheme';
+import { THEME_KEY } from 'utils/themeCache'
 
 function Home() {
   const [theme, setTheme] = useTheme()

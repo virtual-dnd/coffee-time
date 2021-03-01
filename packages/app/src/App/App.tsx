@@ -1,9 +1,9 @@
-import ThemeProvider from '../context/ThemeProvider/ThemeProvider'
-import defaultTheme from '../utils/themeCache';
+import ThemeProvider from 'context/ThemeProvider/ThemeProvider'
+import defaultTheme from 'utils/themeCache';
 import styles from "./App.module.css"
 
 // routes
-import Home from '../routes/Home/Home'
+import Home from 'routes/Home/Home'
 
 function App() {
   return (
