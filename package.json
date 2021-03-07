@@ -10,6 +10,8 @@
     "test:app": "yarn workspace @coffee/app test"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-angular": "^12.0.1",
     "husky": "^5.1.1",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
