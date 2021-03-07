@@ -5,12 +5,21 @@ Get your coffee ratios and other fun stuff for the ☕️  🤓
 This project uses Yarn [Workspaces](https://yarnpkg.com/features/workspaces). It consists 2 main packages (apps) for the client React app (packages/app), and the GraphQL server (server). By nature, each project has it's own settings and if you so choose, can work within the package itself, or use the root directory commands.
 
 ### Client / React App
-The client app uses [Create React App](https://create-react-app.dev/). To use this package, you can either `cd` into the `app` packages directory, and run
+The client app uses [Create React App](https://create-react-app.dev/). For first time users, you
+will need to `cd` into the `app` directory and install the packages.abs
+
+To install the packages run
+```
+yarn install
+```
+
+#### Development
+To use this package for development, you can either `cd` into the `app` packages directory, and run
 ```
 yarn start
 ```
 
-If you are looking for a simpler flow, you can stay in the root directory and just run:
+For a better experience, you can stay in the root directory and just run:
 ```
 yarn start:app
 ```
