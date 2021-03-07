@@ -6,7 +6,7 @@ This project uses Yarn [Workspaces](https://yarnpkg.com/features/workspaces). It
 
 ### Client / React App
 The client app uses [Create React App](https://create-react-app.dev/). For first time users, you
-will need to `cd` into the `app` directory and install the packages.abs
+will need to `cd` into the `app` directory and install the packages.
 
 To install the packages run
 ```
