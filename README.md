@@ -38,3 +38,7 @@ The client app uses [React Testing Library](https://testing-library.com/docs/rea
 ### Server / GraphQL
 
 TBD...
+
+### Commit Messages
+
+This project uses [commitlint](https://commitlint.js.org/#/) to ensure our commit messages are consistent. We use the [@angular-config](https://github.com/conventional-changelog/commitlint#readme) since their team originated and influenced the movement.
