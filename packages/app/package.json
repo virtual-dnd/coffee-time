@@ -21,10 +21,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.0",
-    "@types/jest": "^26.0.20",
-    "husky": "^5.1.1",
-    "lint-staged": "^10.5.4",
-    "prettier": "^2.2.1"
+    "@types/jest": "^26.0.20"
   },
   "eslintConfig": {
     "extends": [
@@ -43,15 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
