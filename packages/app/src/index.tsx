@@ -3,6 +3,8 @@ import { render } from "react-dom";
 import App from "./App/App";
 import reportWebVitals from "./reportWebVitals";
 
+import "./globalStyles.css";
+
 render(
   <StrictMode>
     <App />

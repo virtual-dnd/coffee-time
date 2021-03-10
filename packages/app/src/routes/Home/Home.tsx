@@ -1,10 +1,10 @@
-import { useCallback, useEffect } from 'react';
-import { ThemeOptions } from 'context/ThemeProvider/ThemeProvider';
-import useTheme from 'hooks/useTheme';
-import { THEME_KEY } from 'utils/themeCache'
+import { useCallback, useEffect } from "react";
+import { ThemeOptions } from "context/ThemeProvider/ThemeProvider";
+import useTheme from "hooks/useTheme";
+import { THEME_KEY } from "utils/themeCache";
 
 function Home() {
-  const [theme, setTheme] = useTheme()
+  const [theme, setTheme] = useTheme();
 
   const handleSetTheme = useCallback(() => {
     setTheme((currentTheme: ThemeOptions) => {
@@ -20,9 +20,9 @@ function Home() {
   }, [theme]);
 
   return (
-    <div>
+    <div className={theme}>
       <p>mode: {theme}</p>
-      <button name="theme" onClick={handleSetTheme} type="button" >
+      <button name="theme" onClick={handleSetTheme} type="button">
         toggle mode
       </button>
     </div>
