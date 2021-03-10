@@ -27,3 +27,24 @@ body,
   --text: #20252a;
   --text-sub: #32373a;
 }
+
+.light {
+  color: var(--text);
+  background-color: var(--bg-secondary);
+  --btn-text: var(var(--text-sub));
+  --accent: var(--accent-bean);
+}
+
+.dark {
+  color: var(--bg-primary);
+  background-color: var(--text);
+  --btn-text: var(--bg-primary);
+  --accent: var(--accent-cool);
+}
+
+button {
+  color: var(--btn-text);
+  background-color: var(--accent);
+  padding: 8px 16px;
+  border: none;
+}
