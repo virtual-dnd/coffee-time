@@ -1,0 +1,29 @@
+@import-normalize html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+.root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Theme */
+
+:root {
+  --action-link: #c2a284;
+  --accent-bean: #e4493c;
+  --accent-cool: #6c6ceb;
+  --accent-neutral: #ffbebe;
+  --accent-warm: #ff9c00;
+  --bg-primary: #f1e4d8;
+  --bg-secondary: #ffffff;
+  --text: #20252a;
+  --text-sub: #32373a;
+}

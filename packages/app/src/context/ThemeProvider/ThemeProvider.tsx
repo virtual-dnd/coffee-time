@@ -1,18 +1,28 @@
-import { createContext, Dispatch, memo, PropsWithChildren, SetStateAction, useMemo, useState } from 'react';
+import {
+  createContext,
+  Dispatch,
+  memo,
+  PropsWithChildren,
+  SetStateAction,
+  useMemo,
+  useState,
+} from 'react';
 
 export enum ThemeOptions {
   LIGHT = 'light',
-  DARK = 'dark'
-};
+  DARK = 'dark',
+}
 
-type ThemeContextProps = [ThemeOptions, Dispatch<SetStateAction<ThemeOptions>>]
+type ThemeContextProps = [ThemeOptions, Dispatch<SetStateAction<ThemeOptions>>];
 
-export const ThemeContext = createContext<ThemeContextProps>([] as unknown as ThemeContextProps)
-ThemeContext.displayName = 'ThemeContext'
+export const ThemeContext = createContext<ThemeContextProps>(
+  ([] as unknown) as ThemeContextProps
+);
+ThemeContext.displayName = 'ThemeContext';
 
 interface Props {
   defaultTheme: ThemeOptions;
-};
+}
 
 function ThemeProvider(props: PropsWithChildren<Props>) {
   const { defaultTheme = ThemeOptions.LIGHT } = props;
@@ -23,7 +33,7 @@ function ThemeProvider(props: PropsWithChildren<Props>) {
     <ThemeContext.Provider value={value as ThemeContextProps}>
       {props.children}
     </ThemeContext.Provider>
-  )
+  );
 }
 
-export default memo(ThemeProvider)
+export default memo(ThemeProvider);
