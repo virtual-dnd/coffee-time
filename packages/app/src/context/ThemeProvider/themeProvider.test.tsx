@@ -1,7 +1,7 @@
-import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
-import ThemeProvider, { ThemeOptions } from './ThemeProvider'
-import useTheme from '../../hooks/useTheme'
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+import ThemeProvider, { ThemeOptions } from './ThemeProvider';
+import useTheme from '../../hooks/useTheme';
 
 describe('ThemeProvider', () => {
   function Test() {
@@ -28,14 +28,14 @@ describe('ThemeProvider', () => {
   }
 
   test('passes theme to child components', () => {
-    render(<Test />, {wrapper: ThemeProvider});
-    expect(screen.getByText(/theme: light/i)).toBeInTheDocument()
-  })
+    render(<Test />, { wrapper: ThemeProvider });
+    expect(screen.getByText(/theme: light/i)).toBeInTheDocument();
+  });
 
   test('updates theme when setter called', () => {
-    render(<Test />, {wrapper: ThemeProvider});
+    render(<Test />, { wrapper: ThemeProvider });
     userEvent.click(screen.getByRole('button', { name: /set theme/i }));
-    expect(screen.getByText(/theme: dark/i)).toBeInTheDocument()
-    expect(screen.queryByText(/theme: light/i)).not.toBeInTheDocument()
-  })
+    expect(screen.getByText(/theme: dark/i)).toBeInTheDocument();
+    expect(screen.queryByText(/theme: light/i)).not.toBeInTheDocument();
+  });
 });
