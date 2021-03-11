@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: var(--bg-primary);
+  height: 100%;
+}
+
+.paragraph {
+  color: var(--text);
+  margin: 0;
+}
+
+.button {
+  appearance: none;
+  background-color: var(--action-link);
+  border: none;
+  box-shadow: none;
+}

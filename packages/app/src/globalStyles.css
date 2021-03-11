@@ -1,4 +1,4 @@
-@import-normalize html {
+html {
   box-sizing: border-box;
 }
 
@@ -8,10 +8,15 @@
   box-sizing: inherit;
 }
 
+html,
 body,
-.root {
+#root {
   height: 100%;
   width: 100%;
+}
+
+body {
+  margin: 0;
 }
 
 /* Theme */
@@ -26,4 +31,11 @@ body,
   --bg-secondary: #ffffff;
   --text: #20252a;
   --text-sub: #32373a;
+}
+
+.dark {
+  --bg-primary: #20252a;
+  --bg-secondary: #32373a;
+  --text: #f6f5f2;
+  --text-sub: #9d9d9d;
 }

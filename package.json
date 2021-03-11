@@ -23,5 +23,8 @@
     "**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write"
     ]
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
