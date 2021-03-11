@@ -2,6 +2,7 @@ import { useCallback, useEffect } from 'react';
 import { ThemeOptions } from 'context/ThemeProvider/ThemeProvider';
 import useTheme from 'hooks/useTheme';
 import { THEME_KEY } from 'utils/themeCache';
+import styles from './Home.module.css';
 
 function Home() {
   const [theme, setTheme] = useTheme();
@@ -20,9 +21,14 @@ function Home() {
   }, [theme]);
 
   return (
-    <div className={theme}>
-      <p>mode: {theme}</p>
-      <button name="theme" onClick={handleSetTheme} type="button">
+    <div className={`${theme} ${styles.wrapper}`}>
+      <p className={styles.paragraph}>mode: {theme}</p>
+      <button
+        className={styles.button}
+        name="theme"
+        onClick={handleSetTheme}
+        type="button"
+      >
         toggle mode
       </button>
     </div>
