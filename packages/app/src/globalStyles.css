@@ -33,9 +33,11 @@ body {
   --text-sub: #32373a;
 }
 
-.dark {
-  --bg-primary: #20252a;
-  --bg-secondary: #32373a;
-  --text: #f6f5f2;
-  --text-sub: #9d9d9d;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #20252a;
+    --bg-secondary: #32373a;
+    --text: #f6f5f2;
+    --text-sub: #9d9d9d;
+  }
 }
