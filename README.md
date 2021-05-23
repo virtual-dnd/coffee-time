@@ -9,7 +9,7 @@ This project uses Yarn [Workspaces](https://yarnpkg.com/features/workspaces). It
 ### Client / React App
 
 The client app uses [Create React App](https://create-react-app.dev/). For first time users, you
-will need to `cd` into the `app` directory and install the packages.
+will just need to install the packages via Yarn.
 
 To install the packages run
 
@@ -19,13 +19,13 @@ yarn install
 
 #### Development
 
-To use this package for development, you can either `cd` into the `app` packages directory, and run
+To use this package for development, you can either `cd` into the `app` packages directory and run
 
 ```
 yarn start
 ```
 
-For a better experience, you can stay in the root directory and just run:
+For a better experience, you can stay in the root directory and run:
 
 ```
 yarn start:app
@@ -34,6 +34,18 @@ yarn start:app
 #### Testing
 
 The client app uses [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for unit tests which extend Jest.
+
+To run the test suite for the client app, you can either `cd` into the `app` packages directory and run
+
+```
+yarn test
+```
+
+For a better experience, you can stay in the root directory and run:
+
+```
+yarn test:app
+```
 
 ### Server / GraphQL
 
