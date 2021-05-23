@@ -1,7 +1,6 @@
 {
-  "name": "@coffee/app",
+  "name": "@coffee-time/app",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
