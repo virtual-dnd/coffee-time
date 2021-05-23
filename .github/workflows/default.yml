@@ -7,6 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: sergioramos/yarn-actions/install@v6
+        with:
+          version: 'berry'
       - run: yarn build:app
 
   unit-tests:
@@ -15,4 +17,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: sergioramos/yarn-actions/install@v6
+        with:
+            version: 'berry'
       - run: yarn test:app
