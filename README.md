@@ -1,6 +1,6 @@
 # coffee-time
 
-Get your coffee ratios and other fun stuff for the ☕️ 🤓
+Get your coffee ratios and other fun stuff for the :coffee: :nerd_face:
 
 ## Setup
 
