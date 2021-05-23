@@ -7,7 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - uses: c-hive/gha-yarn-cache@v1
       - run: yarn install
       - run: yarn build:app
 
@@ -17,6 +16,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - uses: c-hive/gha-yarn-cache@v1
       - run: yarn install
       - run: yarn test:app
