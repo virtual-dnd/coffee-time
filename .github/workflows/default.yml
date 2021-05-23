@@ -6,9 +6,8 @@ jobs:
     name: 👷‍♀️ Builds successfully
     steps:
       - uses: actions/checkout@v2
-      - uses: sergioramos/yarn-actions/install@v6
-        with:
-          version: true
+      - uses: actions/setup-node@v2
+      - run: yarn install
       - run: yarn build:app
 
   unit-tests:
@@ -16,7 +15,6 @@ jobs:
     name: 🚧 Unit tests pass
     steps:
       - uses: actions/checkout@v2
-      - uses: sergioramos/yarn-actions/install@v6
-        with:
-            version: true
+      - uses: actions/setup-node@v2
+      - run: yarn install
       - run: yarn test:app
